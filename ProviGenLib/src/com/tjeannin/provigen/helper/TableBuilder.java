@@ -55,7 +55,7 @@ public class TableBuilder {
      */
     public String getSQL() {
 
-        StringBuilder builder = new StringBuilder("CREATE TABLE ");
+        StringBuilder builder = new StringBuilder("CREATE TABLE IF NOT EXISTS ");
         builder.append(contract.getTable()).append(" ( ");
 
         for (ContractField field : contract.getFields()) {

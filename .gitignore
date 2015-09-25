@@ -27,3 +27,12 @@ local.properties
 
 # Maven files
 target
+
+
+.gradle
+gradle.properties
+
+# generated files
+build/
+
+.DS_Store
